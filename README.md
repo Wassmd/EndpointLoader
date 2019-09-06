@@ -7,4 +7,3 @@ Carthage - Install this dependecies
 
 ```
 	github "wassmd/EndpointLoader" ~> 1.0.0
-	```
