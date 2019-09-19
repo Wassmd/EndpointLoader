@@ -6,6 +6,20 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		5F8A692A2333764B00083A1C /* EndPointLoader-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5F8A692D2333764B00083A1C /* Build configuration list for PBXAggregateTarget "EndPointLoader-Universal" */;
+			buildPhases = (
+				5F8A692E2333765600083A1C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "EndPointLoader-Universal";
+			productName = "EndPointLoader-Universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		5F15146323205B2800EEE9ED /* EndPointLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F15145923205B2800EEE9ED /* EndPointLoader.framework */; };
 		5F15146823205B2800EEE9ED /* EndPointLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15146723205B2800EEE9ED /* EndPointLoaderTests.swift */; };
@@ -163,6 +177,9 @@
 					5F15146123205B2800EEE9ED = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					5F8A692A2333764B00083A1C = {
+						CreatedOnToolsVersion = 10.3;
+					};
 				};
 			};
 			buildConfigurationList = 5F15145323205B2800EEE9ED /* Build configuration list for PBXProject "EndPointLoader" */;
@@ -179,6 +196,7 @@
 			targets = (
 				5F15145823205B2800EEE9ED /* EndPointLoader */,
 				5F15146123205B2800EEE9ED /* EndPointLoaderTests */,
+				5F8A692A2333764B00083A1C /* EndPointLoader-Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +217,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F8A692E2333765600083A1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PROJECT_DIR/script/build-frameworks.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F15145523205B2800EEE9ED /* Sources */ = {
@@ -440,6 +478,24 @@
 			};
 			name = Release;
 		};
+		5F8A692B2333764B00083A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCPY7FXGR4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F8A692C2333764B00083A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JCPY7FXGR4;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -466,6 +522,15 @@
 			buildConfigurations = (
 				5F15147123205B2800EEE9ED /* Debug */,
 				5F15147223205B2800EEE9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F8A692D2333764B00083A1C /* Build configuration list for PBXAggregateTarget "EndPointLoader-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F8A692B2333764B00083A1C /* Debug */,
+				5F8A692C2333764B00083A1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
