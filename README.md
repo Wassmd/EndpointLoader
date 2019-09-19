@@ -10,7 +10,7 @@ E.g
 func findBike(at currentLocation: Location, completion: @escaping (Result<[Bike], Error>) -> Void) {
         let parameter = ["latitude": "\(currentLocation.latitude)", "longitude": "\(currentLocation.longitude)", "radius":"500"]
 
-        loader.load(bikeURL.baseEndpoint, ignoreCache: true, json: parameter, timeoutInterval: 5.0) { result in
+        loader.get(bikeURL.baseEndpoint, ignoreCache: true, json: parameter, timeoutInterval: 5.0) { result in
             switch result {
             case .success(let data):
                 do {
