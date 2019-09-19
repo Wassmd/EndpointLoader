@@ -5,7 +5,9 @@ You just have to call GET, POST, DELETE, PUT from your controller / service clas
 
 E.g
 
-`func findBike(at currentLocation: Location, completion: @escaping (Result<[Bike], Error>) -> Void) {
+```swift
+
+func findBike(at currentLocation: Location, completion: @escaping (Result<[Bike], Error>) -> Void) {
         let parameter = ["latitude": "\(currentLocation.latitude)", "longitude": "\(currentLocation.longitude)", "radius":"500"]
 
         loader.load(bikeURL.baseEndpoint, ignoreCache: true, json: parameter, timeoutInterval: 5.0) { result in
@@ -25,6 +27,8 @@ E.g
             }
         }
     }
+
+```
 
 This framework can be added to iOS project to make all endpoint (Network Client) calls using all HTTPS method with headers and parameters.
 
